@@ -1,0 +1,6 @@
+Réponse à la question:
+Lorsque JUnit exécute des tests, il crée un objet de la classe TestResult pour suivre les résultats des tests. À mesure que les tests sont exécutés, si un test échoue, l'objet TestResult est mis à jour avec des informations sur l'échec du test. Ces informations peuvent inclure le nom du test, la cause de l'échec et la trace d'erreur associée.
+
+Plus précisément, lorsque JUnit exécute un test, il appelle les méthodes setUp() et tearDown() avant et après l'exécution du test respectivement. Si le test échoue pendant l'exécution, JUnit appelle la méthode addFailure() de l'objet TestResult et fournit des informations sur l'échec du test à cette méthode. Si le test passe avec succès, JUnit appelle la méthode addSuccess() de l'objet TestResult pour enregistrer le succès du test.
+
+
